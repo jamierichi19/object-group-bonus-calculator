@@ -41,9 +41,6 @@ const employees = [
 // Ask questions when you don't.
 
 
-for ( let i = 0; i < employees.length; i++){
-  console.log(employees[i]);
-}
 
 function createNewEmployee( employee ){
 let bonusPercentage = calculateBonus( employee );
@@ -88,6 +85,9 @@ function calculateBonus( employee ){
 
 // }
 
-
-console.log( employees );
-console.log(createNewEmployee(employees[2]));
+//used for testing purposes
+// console.log( employees );
+// console.log(createNewEmployee(employees[2]));
+for ( let i = 0; i < employees.length; i++){
+  console.log(createNewEmployee(employees[i]));
+}
