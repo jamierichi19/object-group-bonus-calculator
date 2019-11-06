@@ -60,23 +60,23 @@ let totalCompensation = Number(employee.annualSalary) + totalBonus;
 
 function calculateBonus( employee ){
   let bonusPercentage = 0;
-  if ( employee.reviewRating <=2 ){
+  if ( employee.reviewRating <= 2 ){
      bonusPercentage = 0;
   }
-  else if ( employee.reviewRating = 3 ){
-     bonusPercentage = .04;
+  else if ( employee.reviewRating === 3 ){
+     bonusPercentage += .04;
   }
-  else if ( employee.reviewRating = 4 ){
-     bonusPercentage = .06;
+  else if ( employee.reviewRating === 4 ){
+     bonusPercentage += .06;
   }
-  else if ( employee.reviewRating = 5 ){
-     bonusPercentage = .10;
+  else if ( employee.reviewRating === 5 ){
+     bonusPercentage += .10;
   }
-  if ( employee.employeeNumber.length = 4 ){
+  if ( employee.employeeNumber.length === 4 ){
     bonusPercentage += .05;
   }
   if ( employee.annualSalary >= 65000 ) {
-    bonusPercentage -+ .01;
+    bonusPercentage -= .01;
   }
   return bonusPercentage;
 }// end calculateBonus
