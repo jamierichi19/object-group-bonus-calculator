@@ -75,6 +75,12 @@ function calculateBonus( employee ){
   else if ( employee.reviewRating = 5 ){
      bonusPercentage = .10;
   }
+  if ( employee.employeeNumber.length = 4 ){
+    bonusPercentage += .05;
+  }
+  if ( employee.annualSalary >= 65000 ) {
+    bonusPercentage -+ .01;
+  }
   return bonusPercentage;
 }// end calculateBonus
 
@@ -84,4 +90,4 @@ function calculateBonus( employee ){
 
 
 console.log( employees );
-console.log(createNewEmployee(employees[0]));
+console.log(createNewEmployee(employees[2]));
